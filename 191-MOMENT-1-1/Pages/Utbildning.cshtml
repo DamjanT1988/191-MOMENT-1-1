@@ -2,6 +2,12 @@
 @model UtbildningModel
 @{
     ViewData["Title"] = "UTBILDNING";
+
+    string[] kurser = {
+        "Perod 1: Webbutveckling I (DT057G), progression A",
+        "Perod 3: Webbutveckling II (DT093G), progression B",
+        "Perod 4: Webbutveckling III (DT173G), progression B"
+    };
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -9,7 +15,7 @@
 
 <p>Kurserna är huvddelen i huvudområdet datateknik.</p>
 
-<p>Om besökaren inte har en aning om datum eller tid: @DateTime.Now</p>
+<p>Om besökaren inte har en aning om datum eller tid: <strong>@DateTime.Now</strong></p>
 
 <p>Om besökaren inte vet om det är måndag - @if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
     {
@@ -20,7 +26,14 @@
         <strong>Det är inte måndag idag! :D</strong>
     }</p>
 
+<strong>En del kurser jag läst:</strong>
 
+<ul>
+    @foreach (var str in kurser)
+    {
+        <li>@str</li>
+    }
+</ul>
 
 
 <style>
