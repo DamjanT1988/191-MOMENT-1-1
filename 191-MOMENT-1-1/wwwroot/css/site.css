@@ -33,7 +33,7 @@ body {
 }
 
 .nav {
-    font-size:2em;
+    font-size:1.5em;
 }
 
 
@@ -60,6 +60,25 @@ body {
     .navbar-toggler {
         float: none;
         color: black;
+        position:fixed;
+        top: 20px;
+
+    }
+
+    .nav {
+        list-style: none;
+        float: none;
+        text-align: left;
+        color: black;
+        position: fixed;
+        top: 75px;
+        background-color: white;
+        border: dashed;
+        padding: 5%;
+    }
+
+    .nav-item {
+        list-style: none;
     }
 
 }

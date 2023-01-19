@@ -11,13 +11,13 @@
 </head>
 <body>
     <header>
-
-            <div class="container">
+            <div class="container top">
                 <img src='~/assets/MGG-logotype.jpg' class="img-fluid img" asp-append-version="true" asp-page="/Index" />
                  <div class="datetop"> Dagens datum är: @DateTime.Now.ToString("yyy/MM/dd") </div>
-                
             </div>
     </header>
+
+    <div class="container d-sm-inline-flex">
 
     <sidebar>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow mb-3">
@@ -26,7 +26,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         <div class="nav navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
+            <ul class="">
                 <li class="nav-item">
                     <a class="nav-link text-dark" asp-area="" asp-page="/Index">Start</a>
                 </li>
@@ -41,11 +41,10 @@
         </nav>
     </sidebar>
 
-
-    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
     </div>
 
     <footer class="text-center footer text-muted">
