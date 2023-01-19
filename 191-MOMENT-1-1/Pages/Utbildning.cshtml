@@ -4,3 +4,27 @@
     ViewData["Title"] = "UTBILDNING";
 }
 <h1>@ViewData["Title"]</h1>
+
+<h2>Vilka kurser har lästs?</h2>
+
+<p>Kurserna är huvddelen i huvudområdet datateknik.</p>
+
+<p>Om besökaren inte har en aning om datum eller tid: @DateTime.Now</p>
+
+<p>Om besökaren inte vet om det är måndag - @if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+    {
+    <strong>Det är måndag idag! :(</strong>
+    }
+    else
+    {
+        <strong>Det är inte måndag idag! :D</strong>
+    }</p>
+
+
+
+
+<style>
+    .utbildning {
+        background-color: lightgray;
+    }
+</style>

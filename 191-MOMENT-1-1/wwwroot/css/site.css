@@ -22,7 +22,6 @@ body {
 
 .img {
     max-width:200px;
-    /*float:left*/
 }
 
 .datetop {
@@ -36,16 +35,18 @@ body {
 
 .nav {
     font-size: 1.5em;
+    text-align:center;
 }
 
 .nav-item {
     list-style: none;
-    border: dashed;
-    background-color: aqua;
-    margin-bottom:7%;
+    border: solid;
+    border-color: navy;
+    margin-bottom: 10%;
+    text-decoration:none;
 }
 
-.main {
+.center {
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -65,7 +66,7 @@ sidebar {
         padding: 5px;
     }
 
-    .container {
+    .top {
         text-align: center;
     }
 
@@ -96,14 +97,14 @@ sidebar {
 
     .nav-item {
         list-style: none;
-        border: dashed;
-        background-color: aqua;
+        border: solid;
+        border-color: navy;
         margin-bottom: 5%;
         margin-top: 5%;
         margin-right: 5%;
     }
 
-    .main {
+    .center {
         margin-top: 1%;
         margin-bottom: 1%;
     }
