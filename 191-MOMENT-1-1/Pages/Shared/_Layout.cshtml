@@ -12,7 +12,7 @@
 <body>
     <header>
             <div class="container top">
-                <img src='~/assets/MGG-logotype.jpg' class="img-fluid img" asp-append-version="true" asp-page="/Index" />
+            <img src='~/assets/MGG-logotype.jpg' class="img-fluid img" id="figure" asp-append-version="true" onclick="animateFigure()" />
                  <div class="datetop"> Dagens datum är: @DateTime.Now.ToString("yyy/MM/dd") </div>
             </div>
     </header>
